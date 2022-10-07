@@ -1,0 +1,131 @@
+/* 
+## Colors
+
+### Primary
+
+- Soft red: hsl(10, 79%, 65%)
+- Cyan: hsl(186, 34%, 60%)
+
+### Neutral
+
+- Dark brown: hsl(25, 47%, 15%)
+- Medium brown: hsl(28, 10%, 53%)
+- Cream: hsl(27, 66%, 92%)
+- Very pale orange: hsl(33, 100%, 98%)
+
+
+
+### Font
+
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Weights: 400, 700 */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(27, 66%, 92%);
+    font-size: 18px;
+}
+
+#bar:hover{
+    cursor: pointer;
+    background-color: rgb(189, 189, 188);
+    opacity: 0.75;
+    transition:  500ms;
+}
+.tag{
+    color: hsl(27, 66%, 92%);
+    font-size: 14px;
+    background-color: black;
+    border: 3px black solid;
+    border-radius: 3px;
+    width: 50px;
+    height: 25px;
+    position: relative;
+    top: -40px;
+    left:-10px;
+}
+.balance{
+    background-color:hsl(10, 79%, 65%);
+    border-radius: 10px;
+    width: 440px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    color:hsl(27, 66%, 92%) ;
+    display: flex;
+    justify-content: space-between;
+}
+.balance > div {
+    padding: 20px;
+}
+.balance-title{
+font-weight: 400;
+font-size: 12px;
+}
+.balance-value{
+    font-weight: 700;
+}
+.balance-con > div{
+padding: 2px;
+}
+
+.expense-chart{
+    background-color:white;
+    width: 440px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.chart-title{
+    color: black;
+    font-weight: 700;
+    position: relative;
+    left: 0;
+    padding: 10px;
+    display: block;
+}
+
+.chart-values {
+    color: hsla(30, 3%, 69%, 0.973);
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 10px;
+    margin: 0;
+   
+}
+.left :nth-child(1){
+    color:  hsla(30, 3%, 69%, 0.973);
+    font-size: 14px;
+}
+.left :nth-child(3){
+    font-size: 24px;
+    font-weight: 700;
+}
+.right :nth-child(1){
+    color:  black;
+    font-size: 12px;
+    font-weight: 700;
+}
+.right :nth-child(3){
+    color:  hsla(30, 3%, 69%, 0.973);
+}
+.amounts{
+    display: flex;
+    justify-content: space-between;  
+}
+.amounts> div{
+    padding: 10px 20px;
+}
+
+hr{
+    background-color: hsl(28, 10%, 53%) ;
+    width: 400px;
+}
